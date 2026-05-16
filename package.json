@@ -1,0 +1,24 @@
+{
+  "name": "library-managment-system",
+  "version": "1.0.0",
+  "description": "This is a library managment API backend for the managment of user and the books",
+  "homepage": "https://github.com/ashishpatidar2108/Library-managment-system#readme",
+  "bugs": {
+    "url": "https://github.com/ashishpatidar2108/Library-managment-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishpatidar2108/Library-managment-system.git"
+  },
+  "license": "ISC",
+  "author": "Ashish",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
