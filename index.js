@@ -1,17 +1,18 @@
-const exspress = require("express");
+const express = require("express");
 
 const { users } = require("./data/user.json");
 
-const app = exspress();
+const app = express();
 
 const PORT = 8081;
 
-app.use(exspress.json());
+app.use(express.json());
 
-// Health / Welcome route
+
+
 app.get("/", (req, res) => {
   return res.status(200).json({
-    message: "Welcome to the library management system",
+    message :"Welcome to the library management system",
   });
 });
 
