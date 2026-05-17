@@ -38,9 +38,15 @@ GET: get all the issuee books
 GET:  get all the issued books with their fine ammount
 
 
+## Setup MongoDB Atlas
+1) Create a file named `.env` in this folder.
+2) Add your connection string as `DB_URL`.
+3) Example is available in `.env.example`.
+
 ## subscription types
 
    >>BASIC (3 MONTHS)
+
    >>STANDARD (6 MONTHS)
    >>PRIMIUM (12 MONTHS)
 
@@ -56,4 +62,11 @@ GET:  get all the issued books with their fine ammount
  npm run dev
 
  TO restore node modules and pakage-lock.json file --> npm i
+
+ npm install mongoose
+
+ mongodb+srv://ashishpatidar2108:<db_password>@cluster0.bqmet08.mongodb.net/?appName=Cluster0
+
+ OjwQWAKt5Qbeyyrf
  
+ mongodb+srv://ashishpatidar2108:<db_password--> OjwQWAKt5Qbeyyrf >@cluster0.bqmet08.mongodb.net/?appName=Cluster0
