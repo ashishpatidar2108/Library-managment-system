@@ -4,7 +4,7 @@
 
  #Roots and the endpoints
   
-  ##/user
+##/user
   GET: Get all thhe list of users in the system 
   POST: create/ragister a new user
 
@@ -50,3 +50,10 @@ GET:  get all the issued books with their fine ammount
 
 ## commands
  npm init
+ npm i exspress
+ npm i nodemon --save-dev
+
+ npm run dev
+
+ TO restore node modules and pakage-lock.json file --> npm i
+ 
