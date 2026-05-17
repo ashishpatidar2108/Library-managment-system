@@ -1,19 +1,21 @@
 const mongoose = require('mongoose');
 
-dbConnection = async () => {
-  const DB_URL = process.env.DB_URL;
-  if (!DB_URL) {
-    console.warn('db connection is established');
-    return;
-  }
+function DbConnection() {
+    const DB_URL = process.env.MONGO_URI;
 
+    // Check if the URI is actually being read
+    if (!DB_URL) {
+        console.error("❌ Error: MONGO_URI is undefined. Check your .env file!");
+        return;
+    }
 
-  await mongoose.connect(DB_URL);
-  console.log('Connected to MongoDB successfully!');
+    mongoose.connect(DB_URL)
+        .then(() => {
+            console.log("DB Connected... 🚀");
+        })
+        .catch((error) => {
+            console.error("Connection Error:", error.message);
+        });
+}
 
-  const db = mongoose.connection;
-  db.on('error', console.error.bind(console, 'connection error:'));
-};
-
-module.exports = dbConnection;
-
+module.exports = DbConnection;
